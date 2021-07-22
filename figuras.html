@@ -7,9 +7,63 @@
     <title>Fifuras geométricas</title>
 </head>
 <body>
-    <h1>
-        Figuras geométricas
-    </h1>
+   <header>
+       <h1>
+           Figuras geometricas
+       </h1>
+       <p>Primer taller del curso Practico de JavaScript</p>
+   </header>
+
+   <section>
+       <h2>Calcula el area y perimetro de un cuadrado</h2>
+       <form action="">
+           <label for="InputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+           </label>
+           <input id="InputCuadrado" type="number" />
+           <button type="button" onclick="calcularPerimetroCuadrado()">
+             clacular perimetro
+           </button>
+           <button type="button" onclick="calcularAreaCuadrado()">
+            clacular area
+           </button>
+       </form>
+   </section>
+
+   <section>
+    <h2>Calcula el area y perimetro de un triangulo</h2>
+    <form action="">
+        <label for="InputTrianguloLado1">
+         Escribe cuanto mide cada lado de tu triangulo y su altura:
+        </label>
+        <input id="InputTrianguloLado1"   type="number" placeholder="Lado 1" />
+        <input id="InputTrianguloLado2"   type="number" placeholder="Lado 2"/>
+        <input id="InputTrianguloBase"    type="number" placeholder="Base"/>
+        <input id="InputTrianguloAltura"  type="number" placeholder="Altura"/>
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          calcular perimetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+         calcular area
+        </button>
+    </form>
+</section>
+
+   <section>
+    <h2>Calcula el area y perimetro de un circulo</h2>
+    <form action="">
+        <label for="InputCirculo">
+         Escribe cuanto mide el radio de tu circulo:
+        </label>
+        <input id="InputCirculo" type="number" />
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          clacular perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+         clacular area
+        </button>
+    </form>
+</section>
 
     <script src="./figuras.js"></script>
 </body>
