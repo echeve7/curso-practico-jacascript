@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Calcula tu ahorro</title>
+</head>
+<body>
+    
+<div class="container">
+    <H1>Calculadora de ahorros</H1>
+  <form action="">
+    <div class="form-group">
+      <label for="ingresoMensual"><b>Ingreso Mensual:</b> </label>
+      <input type="number" class="form-control" id="ingresoMensual" placeholder="Ingresa tu salario mensual" required>
+    </div>
+    <div class="form-group">
+      <label for="porcentaje"><b>Porcentaje que deseas ahorrar:</b></label>
+      <input type="number" class="form-control" id="porcentaje" placeholder="Ingresa el porcentaje que deseas ahorrar" name="pswd" required>
+    </div>
+    <div class="form-group">
+      <label for="meses"><b>Cuantos meses deseas ahorrar:</b></label>
+      <input type="number" class="form-control" id="meses" placeholder="Ingresa el numero de meses que deseas ahorrar" required name="pswd">
+    </div>
+    <div class="form-group">
+      <p id="ahorroTotal"><b id="ahorroNegritas"></b></p>
+    </div>
+    <div class="form-group">
+        <p id="restoMensual"><b id="restoNegritas"></b>
+        </p>
+      </div>
+
+      <button type="button" class="btn btn-primary" onclick ="calcularAhorro()">
+        Calcular Ahorro
+      </button>
+  </form>
+</div>
+<script src="./proyecto.js"></script>
+</body>
+</html>
